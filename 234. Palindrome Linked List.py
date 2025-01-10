@@ -83,5 +83,5 @@ def list_to_linked_list(elements):
 
 
 solution = Solution()
-print(solution.isPalindrome([1,2,2,1]))
-print(solution.isPalindrome([1,2]))
+print(solution.isPalindrome(list_to_linked_list([1, 2, 2, 1])))
+print(solution.isPalindrome(list_to_linked_list([1, 2])))
