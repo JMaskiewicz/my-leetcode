@@ -11,9 +11,7 @@ class Solution:
         right = len(height) - 1
 
         while left < right:
-            width = right - left
-            length = min(height[left], height[right])
-            max_area = max(max_area, width * length)
+            max_area = max(max_area, min(height[left], height[right]) * (right - left))
 
             if height[left] < height[right]:
                 left += 1
